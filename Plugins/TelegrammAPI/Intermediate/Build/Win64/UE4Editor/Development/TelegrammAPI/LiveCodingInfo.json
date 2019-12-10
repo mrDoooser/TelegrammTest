@@ -4,14 +4,14 @@
 		"Module.TelegrammAPI.cpp.obj": [
 			"TelegrammAPI.cpp.obj",
 			"TelegrammAPIWindows.cpp.obj",
-			"TelegrammConnector.cpp.obj",
-			"TelegrammManager.cpp.obj"
+			"TelegrammManager.cpp.obj",
+			"TelegrammConnector.cpp.obj"
 		],
 		"Module.TelegrammAPI.gen.cpp.obj": [
-			"TelegrammAPI.init.gen.cpp.obj",
 			"TelegrammAPIWindows.gen.cpp.obj",
-			"TelegrammConnector.gen.cpp.obj",
-			"TelegrammManager.gen.cpp.obj"
+			"TelegrammManager.gen.cpp.obj",
+			"TelegrammAPI.init.gen.cpp.obj",
+			"TelegrammConnector.gen.cpp.obj"
 		]
 	}
 }

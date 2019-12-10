@@ -250,11 +250,12 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.1
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthread
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xtime
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthreads.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\map
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xtree
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammAPIWindows.generated.h
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI\Private\TelegrammAPIWindows.cpp
-E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI\Private\TelegrammConnector.cpp
-E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI\Public\TelegrammConnector.h
-E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammConnector.generated.h
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI\Private\TelegrammManager.cpp
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI\Public\TelegrammManager.h
+e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\source\telegrammapi\public\TelegrammConnector.h
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammConnector.generated.h
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammManager.generated.h

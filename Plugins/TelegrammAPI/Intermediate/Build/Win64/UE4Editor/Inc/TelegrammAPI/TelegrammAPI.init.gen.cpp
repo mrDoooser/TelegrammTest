@@ -22,6 +22,9 @@ void EmptyLinkFunctionForGeneratedCodeTelegrammAPI_init() {}
 	TELEGRAMMAPI_API UFunction* Z_Construct_UDelegateFunction_TelegrammAPI_OnAuthorizationStateWaitPhoneNumber__DelegateSignature();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UDelegateFunction_TelegrammAPI_OnAuthorizationStateWaitEncryptionKey__DelegateSignature();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UDelegateFunction_TelegrammAPI_OnAuthorizationStateWaitTdlibParameters__DelegateSignature();
+	TELEGRAMMAPI_API UFunction* Z_Construct_UDelegateFunction_TelegrammAPI_OnChatUpdated__DelegateSignature();
+	TELEGRAMMAPI_API UFunction* Z_Construct_UDelegateFunction_TelegrammAPI_OnUserUpdated__DelegateSignature();
+	TELEGRAMMAPI_API UFunction* Z_Construct_UDelegateFunction_TelegrammAPI_OnMessageUpdated__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_TelegrammAPI()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -39,14 +42,17 @@ void EmptyLinkFunctionForGeneratedCodeTelegrammAPI_init() {}
 				(UObject* (*)())Z_Construct_UDelegateFunction_TelegrammAPI_OnAuthorizationStateWaitPhoneNumber__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_TelegrammAPI_OnAuthorizationStateWaitEncryptionKey__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_TelegrammAPI_OnAuthorizationStateWaitTdlibParameters__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_TelegrammAPI_OnChatUpdated__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_TelegrammAPI_OnUserUpdated__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_TelegrammAPI_OnMessageUpdated__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TelegrammAPI",
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xEECE20C0,
-				0x2246B58A,
+				0xC96C41AF,
+				0x18EBCC67,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

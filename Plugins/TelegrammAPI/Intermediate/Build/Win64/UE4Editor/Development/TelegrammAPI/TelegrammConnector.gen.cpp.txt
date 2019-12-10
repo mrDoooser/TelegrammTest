@@ -1,0 +1,254 @@
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\Definitions.TelegrammAPI.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI/Public/TelegrammConnector.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Public\EngineMinimal.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\CoreUObject.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Core\Public\Core.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/MonolithicHeaderBoilerplate.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\GenericPlatform/GenericPlatformNamedPipe.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\HAL/PlatformNamedPipe.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Windows/WindowsPlatformNamedPipe.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\GenericPlatform/GenericPlatformCriticalSection.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\HAL/PlatformFile.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Windows/WindowsPlatformFile.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\HAL/PlatformIncludes.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/MonolithicHeaderBoilerplate.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\HAL/PlatformFilemanager.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/MessageDialog.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\ProfilingDebugging/ScopedDebugInfo.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\ProfilingDebugging/ExternalProfiler.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/StringUtility.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/NameAsStringProxyArchive.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/MRUArray.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/TransArray.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/ArrayBuilder.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/SingleThreadEvent.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/StaticBitArray.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/MapBuilder.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\HAL/ThreadingBase.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Internationalization/TextLocalizationManagerGlobals.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Internationalization/Culture.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Logging/LogSuppressionInterface.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Logging/LogScopedCategoryAndVerbosityOverride.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\HAL/OutputDevices.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Logging/LogScopedVerbosityOverride.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceNull.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceMemory.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceFile.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceDebug.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceArchiveWrapper.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceAnsiError.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/TimeGuard.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/LargeMemoryWriter.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/LargeMemoryData.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/LargeMemoryReader.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/BufferArchive.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/MemoryReader.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/ArrayReader.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/ArrayWriter.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Serialization/BufferWriter.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/Variant.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/WildcardString.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/CircularBuffer.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Containers/CircularQueue.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceHelper.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/ScopedSlowTask.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/CallbackDevice.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/LocalTimestampDirectoryVisitor.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/BlueprintsObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/BuildObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/CoreObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/FrameworkObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/MobileObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/NetworkingObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/OnlineObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/PhysicsObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/PlatformObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/SequencerObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\UObject/VRObjectVersion.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/OutputDeviceConsole.h
+e:\unreal\ue_4.22\engine\source\runtime\core\public\Misc/MonitoredProcess.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/ErrorException.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/UObjectAllocator.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Misc/TextBuffer.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/PropertyLocalizationDataGathering.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/LevelGuids.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/ObjectMemoryAnalyzer.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/ReferenceChainSearch.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Core\Public\HAL/ThreadHeartBeat.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Internationalization/TextPackageNamespaceUtil.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Core\Public\Internationalization/TextNamespaceUtil.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveCountMem.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ObjectAndNameAsStringProxyArchive.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ObjectWriter.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ObjectReader.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveShowReferences.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/FindReferencersArchive.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/FindObjectReferencers.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveFindCulprit.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveObjectGraph.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/TraceReferences.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveTraceRoute.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/DuplicatedObject.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/DuplicatedDataReader.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/DuplicatedDataWriter.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveReplaceObjectRef.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveReplaceOrClearExternalReferences.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveObjectPropertyMapper.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveReferenceMarker.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Serialization/ArchiveObjectCrc32.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/LinkerSave.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Misc/NotifyHook.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\Misc/RedirectCollector.h
+e:\unreal\ue_4.22\engine\source\runtime\coreuobject\public\UObject/ScriptStackTracker.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\GraphEditAction.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\AI/RVOAvoidanceInterface.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RVOAvoidanceInterface.generated.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\AI/NavDataGenerator.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemBase.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemBase.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationAvoidanceTypes.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationAvoidanceTypes.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\ParticleVertexFactory.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\TessellationRendering.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\MeshParticleVertexFactory.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\ParticleHelper.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\Distributions.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\ParticleEmitterInstances.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Distributions/DistributionFloat.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Distributions/Distribution.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Distribution.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DistributionFloat.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Distributions/DistributionVector.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DistributionVector.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/Orientation/ParticleModuleOrientationAxisLock.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/Orientation/ParticleModuleOrientationBase.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/ParticleModule.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleModule.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleModuleOrientationBase.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleModuleOrientationAxisLock.generated.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\public\Scalability.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/ParticleEmitter.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleEmitter.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystemComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/ParticleSystem.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystem.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Particles/Emitter.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Emitter.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ParticleSystemComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/LightComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/LightComponentBase.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponentBase.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LightComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/PointLightComponent.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/LocalLightComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\LocalLightComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PointLightComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Components/SpotLightComponent.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpotLightComponent.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+e:\unreal\ue_4.22\engine\source\runtime\engine\classes\kismet\GameplayStaticsTypes.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+E:\Unreal\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\ThirdParty\tdlib\include\UETdApiLibrary.h
+e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\thirdparty\tdlib\include\UETdApiStructs.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\string
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\istream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ostream
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ios
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\climits
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cmath
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xtgmath.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cstdio
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\streambuf
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xiosbase
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocale
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cstring
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\stdexcept
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xmemory0
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cstdint
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\limits
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ymath.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cfloat
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cwchar
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xutility
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\utility
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\iosfwd
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xatomic0.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\typeinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\vcruntime_typeinfo.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocinfo
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xlocinfo.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\locale.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\memory
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xmemory
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xfacet
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\system_error
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\cerrno
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xcall_once.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xerrc.h
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\share.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xstring_insert.h
+e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\thirdparty\tdlib\include\Delegate.hpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\iostream
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\assert.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\functional
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\tuple
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\mutex
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\chrono
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\ratio
+C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\time.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xtimec.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthrcommon.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thread
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthread
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xtime
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\thr/xthreads.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\map
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xtree
+e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\intermediate\build\win64\ue4editor\inc\telegrammapi\TelegrammConnector.generated.h

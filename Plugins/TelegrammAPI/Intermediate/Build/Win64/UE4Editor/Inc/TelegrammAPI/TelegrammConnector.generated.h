@@ -8,89 +8,165 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FTelegrammMessageInfo;
+struct FTelegrammUserInfo;
+struct FTelegrammChatInfo;
 #ifdef TELEGRAMMAPI_TelegrammConnector_generated_h
 #error "TelegrammConnector.generated.h already included, missing '#pragma once' in TelegrammConnector.h"
 #endif
 #define TELEGRAMMAPI_TelegrammConnector_generated_h
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_22_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_123_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FTelegrammMessageInfo_Statics; \
+	TELEGRAMMAPI_API static class UScriptStruct* StaticStruct();
+
+
+template<> TELEGRAMMAPI_API UScriptStruct* StaticStruct<struct FTelegrammMessageInfo>();
+
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_76_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FTelegrammUserInfo_Statics; \
+	TELEGRAMMAPI_API static class UScriptStruct* StaticStruct();
+
+
+template<> TELEGRAMMAPI_API UScriptStruct* StaticStruct<struct FTelegrammUserInfo>();
+
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_16_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FTelegrammChatInfo_Statics; \
+	TELEGRAMMAPI_API static class UScriptStruct* StaticStruct();
+
+
+template<> TELEGRAMMAPI_API UScriptStruct* StaticStruct<struct FTelegrammChatInfo>();
+
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_222_DELEGATE \
+struct _Script_TelegrammAPI_eventOnMessageUpdated_Parms \
+{ \
+	FTelegrammMessageInfo MessageInfo; \
+}; \
+static inline void FOnMessageUpdated_DelegateWrapper(const FMulticastScriptDelegate& OnMessageUpdated, FTelegrammMessageInfo MessageInfo) \
+{ \
+	_Script_TelegrammAPI_eventOnMessageUpdated_Parms Parms; \
+	Parms.MessageInfo=MessageInfo; \
+	OnMessageUpdated.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_221_DELEGATE \
+struct _Script_TelegrammAPI_eventOnUserUpdated_Parms \
+{ \
+	FTelegrammUserInfo UserInfo; \
+}; \
+static inline void FOnUserUpdated_DelegateWrapper(const FMulticastScriptDelegate& OnUserUpdated, FTelegrammUserInfo UserInfo) \
+{ \
+	_Script_TelegrammAPI_eventOnUserUpdated_Parms Parms; \
+	Parms.UserInfo=UserInfo; \
+	OnUserUpdated.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_220_DELEGATE \
+struct _Script_TelegrammAPI_eventOnChatUpdated_Parms \
+{ \
+	FTelegrammChatInfo ChatInfo; \
+}; \
+static inline void FOnChatUpdated_DelegateWrapper(const FMulticastScriptDelegate& OnChatUpdated, FTelegrammChatInfo ChatInfo) \
+{ \
+	_Script_TelegrammAPI_eventOnChatUpdated_Parms Parms; \
+	Parms.ChatInfo=ChatInfo; \
+	OnChatUpdated.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
+
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_219_DELEGATE \
 static inline void FOnAuthorizationStateWaitTdlibParameters_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateWaitTdlibParameters) \
 { \
 	OnAuthorizationStateWaitTdlibParameters.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_21_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_218_DELEGATE \
 static inline void FOnAuthorizationStateWaitEncryptionKey_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateWaitEncryptionKey) \
 { \
 	OnAuthorizationStateWaitEncryptionKey.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_20_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_217_DELEGATE \
 static inline void FOnAuthorizationStateWaitPhoneNumber_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateWaitPhoneNumber) \
 { \
 	OnAuthorizationStateWaitPhoneNumber.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_19_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_216_DELEGATE \
 static inline void FOnAuthorizationStateWaitPassword_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateWaitPassword) \
 { \
 	OnAuthorizationStateWaitPassword.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_18_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_215_DELEGATE \
 static inline void FOnAuthorizationStateWaitRegistration_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateWaitRegistration) \
 { \
 	OnAuthorizationStateWaitRegistration.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_17_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_214_DELEGATE \
 static inline void FOnAuthorizationStateWaitCode_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateWaitCode) \
 { \
 	OnAuthorizationStateWaitCode.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_16_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_213_DELEGATE \
 static inline void FOnAuthorizationStateClosed_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateClosed) \
 { \
 	OnAuthorizationStateClosed.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_15_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_212_DELEGATE \
 static inline void FOnAuthorizationStateClosing_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateClosing) \
 { \
 	OnAuthorizationStateClosing.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_14_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_211_DELEGATE \
 static inline void FOnAuthorizationStateLoggingOut_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateLoggingOut) \
 { \
 	OnAuthorizationStateLoggingOut.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_13_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_210_DELEGATE \
 static inline void FOnAuthorizationStateReady_DelegateWrapper(const FMulticastScriptDelegate& OnAuthorizationStateReady) \
 { \
 	OnAuthorizationStateReady.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_12_DELEGATE \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_209_DELEGATE \
 static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelegate& OnCallbackMaked) \
 { \
 	OnCallbackMaked.ProcessMulticastDelegate<UObject>(NULL); \
 }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_RPC_WRAPPERS \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execGetChatHistory) \
+	{ \
+		P_GET_PROPERTY(UInt64Property,Z_Param_chatId); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_fromMessageId); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_offset); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_limit); \
+		P_GET_UBOOL(Z_Param_onlyLocal); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetChatHistory(Z_Param_chatId,Z_Param_fromMessageId,Z_Param_offset,Z_Param_limit,Z_Param_onlyLocal); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetAuthorizationStateTdlibParameters) \
 	{ \
@@ -170,6 +246,14 @@ static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelega
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execClear) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Clear(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execStopListening) \
 	{ \
 		P_FINISH; \
@@ -195,7 +279,20 @@ static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelega
 	}
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execGetChatHistory) \
+	{ \
+		P_GET_PROPERTY(UInt64Property,Z_Param_chatId); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_fromMessageId); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_offset); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_limit); \
+		P_GET_UBOOL(Z_Param_onlyLocal); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->GetChatHistory(Z_Param_chatId,Z_Param_fromMessageId,Z_Param_offset,Z_Param_limit,Z_Param_onlyLocal); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execSetAuthorizationStateTdlibParameters) \
 	{ \
@@ -275,6 +372,14 @@ static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelega
 		P_NATIVE_END; \
 	} \
  \
+	DECLARE_FUNCTION(execClear) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->Clear(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execStopListening) \
 	{ \
 		P_FINISH; \
@@ -300,7 +405,7 @@ static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelega
 	}
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_INCLASS_NO_PURE_DECLS \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTelegrammConnector(); \
 	friend struct Z_Construct_UClass_UTelegrammConnector_Statics; \
@@ -309,7 +414,7 @@ public: \
 	DECLARE_SERIALIZER(UTelegrammConnector)
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_INCLASS \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_INCLASS \
 private: \
 	static void StaticRegisterNativesUTelegrammConnector(); \
 	friend struct Z_Construct_UClass_UTelegrammConnector_Statics; \
@@ -318,7 +423,7 @@ public: \
 	DECLARE_SERIALIZER(UTelegrammConnector)
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_STANDARD_CONSTRUCTORS \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UTelegrammConnector(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UTelegrammConnector) \
@@ -331,7 +436,7 @@ private: \
 public:
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_ENHANCED_CONSTRUCTORS \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UTelegrammConnector(UTelegrammConnector&&); \
@@ -342,29 +447,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UTelegrammConnector); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UTelegrammConnector)
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_PRIVATE_PROPERTY_OFFSET \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__isListening() { return STRUCT_OFFSET(UTelegrammConnector, isListening); }
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_25_PROLOG
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_GENERATED_BODY_LEGACY \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_227_PROLOG
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_PRIVATE_PROPERTY_OFFSET \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_RPC_WRAPPERS \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_INCLASS \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_STANDARD_CONSTRUCTORS \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_PRIVATE_PROPERTY_OFFSET \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_RPC_WRAPPERS \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_INCLASS \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_GENERATED_BODY \
+#define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_PRIVATE_PROPERTY_OFFSET \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_INCLASS_NO_PURE_DECLS \
-	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_28_ENHANCED_CONSTRUCTORS \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_PRIVATE_PROPERTY_OFFSET \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_RPC_WRAPPERS_NO_PURE_DECLS \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_INCLASS_NO_PURE_DECLS \
+	TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

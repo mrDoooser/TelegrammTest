@@ -3,8 +3,7 @@
 #include "Delegate.hpp"
 #include <functional>
 #include <mutex>
-//#include "UETdApi.h"
-//#include "pch.h"
+#include <map>
 
 #define DLL_EXPORT __declspec(dllexport)	
 
@@ -18,35 +17,11 @@ extern "C"
 	{
 	public:
 		__declspec(dllexport) UETdApiLibrary();
-		
 		__declspec(dllexport) ~UETdApiLibrary();
-
 		__declspec(dllexport) bool Initialized();
-
 		__declspec(dllexport) void Initialize(FTdApiInitParams *init_params);
-
 		__declspec(dllexport) void ReadData();
 
-		//__declspec(dllexport) void SetFunc(std::function<void(void)> &func);
-
-		//__declspec(dllexport) std::function<void(void)>* GetFunc();
-
-		//__declspec(dllexport) void SetCallbackFunc(void (*func)());
-		//
-		//__declspec(dllexport) void SetCallbackFunc(std::function<void()>func);
-
-		//__declspec(dllexport) void CallbackFunc();
-
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateReady();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateLoggingOut();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateClosing();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateClosed();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateWaitCode();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateWaitRegistration();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateWaitPassword();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateWaitPhoneNumber();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateWaitEncryptionKey();
-		//__declspec(dllexport) Delegate* GetDelegateAuthorizationStateWaitTdlibParameters();
 	private:
 		void SetCallbackFunctions();
 
@@ -66,8 +41,7 @@ extern "C"
 
 		std::mutex EventController;
 	public:
-		//std::function<void(void)> func;
-
+		// Callbacks
 		std::function<void(void)> OnAuthorizationStateReady;
 		std::function<void(void)> OnAuthorizationStateLoggingOut;
 		std::function<void(void)> OnAuthorizationStateClosing;
@@ -80,17 +54,43 @@ extern "C"
 		std::function<void(void)> OnAuthorizationStateWaitTdlibParameters;
 
 		// Authorizations
-		__declspec(dllexport) void SetAuthorizationCode(std::string *code);
-		__declspec(dllexport) void SetAuthorizationStateRegistration(std::string *first_name, std::string *last_name);
-		__declspec(dllexport) void SetAuthorizationStatePassword(std::string *password);
-		__declspec(dllexport) void SetAuthorizationStatePhoneNumber(std::string *phone_number);
-		__declspec(dllexport) void SetAuthorizationStateEncryptionKey(std::string *key);
+		__declspec(dllexport) void SetAuthorizationCode(char* code);
+		__declspec(dllexport) void SetAuthorizationStateRegistration(char* first_name, char* last_name);
+		__declspec(dllexport) void SetAuthorizationStatePassword(char* password);
+		__declspec(dllexport) void SetAuthorizationStatePhoneNumber(char* phone_number);
+		__declspec(dllexport) void SetAuthorizationStateEncryptionKey(char* key);
 		__declspec(dllexport) void SetAuthorizationStateDestroy();
 		__declspec(dllexport) void SetAuthorizationStateTdlibParameters();
+
+	public:
+		// Chats
+		__declspec(dllexport) void UpdateChatlist();
+		__declspec(dllexport) std::map<std::int64_t, FChatInfo>* GetChatlist();
+		//void ChatlistUpdated(std::vector<FChatInfo>);
+		void ChatlistUpdated();
+		void ChatUpdated(FChatInfo);
+		void UserUpdated(FUserInfo UserInfo);
+
+		//Callbacks
+		std::function<void(void)> OnChatlistUpdated;
+		std::function<void(FChatInfo)> OnChatUpdated;
+		std::function<void(FUserInfo)> OnUserUpdated;
+
+	public:
+		// Commands
+		__declspec(dllexport) void GetChatHistory(std::int64_t chatId, std::int64_t fromMessageId, std::int32_t offset, std::int32_t limit, bool onlyLocal);
+
+		// Messages
+		void MessageUpdated(FMessage message);
+
+
+		//Callbacks
+		std::function<void(FMessage message)> OnMessgaeUpdated;
 	};
 #ifdef __cplusplus
 }
 #endif
+
 
 
 

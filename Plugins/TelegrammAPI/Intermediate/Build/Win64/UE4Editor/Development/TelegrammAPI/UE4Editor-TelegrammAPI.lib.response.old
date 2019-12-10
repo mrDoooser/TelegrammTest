@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-TelegrammAPI.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\WORK_PRJ\TDTest\TelegrammTest\Intermediate\Build\Win64\TelegrammTestEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\TelegrammConnector.cpp.obj"
+"E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\Module.TelegrammAPI.cpp.obj"
+"E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\Module.TelegrammAPI.gen.cpp.obj"
+"E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\Default.rc2.res"
+/OUT:"E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\UE4Editor-TelegrammAPI.lib"
+/INCLUDE:IMPLEMENT_MODULE_TelegrammAPI

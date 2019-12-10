@@ -40,8 +40,8 @@ void UTelegrammConnector::InitTD()
 
 		isListening = true;
 
-		listener = new std::thread(&UTelegrammConnector::Loop, this);
-		listener->detach();
+		std::thread listener(&UTelegrammConnector::Loop, this);
+		listener.detach();
 	}
 }
 
@@ -59,20 +59,28 @@ void UTelegrammConnector::StopListening()
 	UE_LOG(LogTemp, Warning, TEXT("UTelegrammConnector UE API - StopListening"));
 }
 
+void UTelegrammConnector::Clear()
+{
+	StopListening();
+	if(lib != nullptr)
+		delete lib;
+}
+
 void UTelegrammConnector::Loop()
 {
 	while (isListening)
 	{
-		if (isListening)
+		if (isListening && lib)
 		{
 			lib->ReadData();
-			//AsyncTask(ENamedThreads::GameThread, [&]()
-			//{
-			//	lib->ReadData();
-			//});
 		}
-		UE_LOG(LogTemp, Warning, TEXT("UTelegrammConnector UE API - READ DATA"));
-		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+		else
+		{ 
+			return;
+		}
+
+		//UE_LOG(LogTemp, Warning, TEXT("UTelegrammConnector UE API - READ DATA"));
+		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 	}
 }
 
@@ -89,90 +97,130 @@ void UTelegrammConnector::InitializeCallbackFunctions()
 	lib->OnAuthorizationStateWaitEncryptionKey = (std::bind(&UTelegrammConnector::AuthorizationStateWaitEncryptionKey, this));
 	lib->OnAuthorizationStateWaitTdlibParameters = (std::bind(&UTelegrammConnector::AuthorizationStateWaitTdlibParameters, this));
 
+	lib->OnChatUpdated = (std::bind(&UTelegrammConnector::ChatUpdated, this, std::placeholders::_1));
+	lib->OnUserUpdated = (std::bind(&UTelegrammConnector::UserUpdated, this, std::placeholders::_1));
+
+	lib->OnMessgaeUpdated = (std::bind(&UTelegrammConnector::MessageUpdated, this, std::placeholders::_1));
 }
 
 void UTelegrammConnector::AuthorizationStateReady()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateReady..."));
-	OnAuthorizationStateReady.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateReady.Broadcast();
+	});
+	lib->UpdateChatlist();
 }
 void UTelegrammConnector::AuthorizationStateLoggingOut()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateLoggingOut..."));
-	OnAuthorizationStateLoggingOut.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateLoggingOut.Broadcast();
+	});
 }
 void UTelegrammConnector::AuthorizationStateClosing()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateClosing..."));
-	OnAuthorizationStateClosing.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateClosing.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateClosed()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateClosed..."));
-	OnAuthorizationStateClosed.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateClosed.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateWaitCode()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateWaitCode..."));
-	OnAuthorizationStateWaitCode.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateWaitCode.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateWaitRegistration()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateWaitRegistration..."));
-	OnAuthorizationStateWaitRegistration.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateWaitRegistration.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateWaitPassword()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateWaitPassword..."));
-	OnAuthorizationStateWaitPassword.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateWaitPassword.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateWaitPhoneNumber()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateWaitPhoneNumber..."));
-	OnAuthorizationStateWaitPhoneNumber.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateWaitPhoneNumber.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateWaitEncryptionKey()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateWaitEncryptionKey..."));
-	OnAuthorizationStateWaitEncryptionKey.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateWaitEncryptionKey.Broadcast();
+	});
+
 }
 void UTelegrammConnector::AuthorizationStateWaitTdlibParameters()
 {
 	UE_LOG(LogTemp, Warning, TEXT("TdLibTest callback - AuthorizationStateWaitTdlibParameters..."));
-	OnAuthorizationStateWaitTdlibParameters.Broadcast();
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnAuthorizationStateWaitTdlibParameters.Broadcast();
+	});
+
 }
 
 void UTelegrammConnector::SetAuthorizationCode(FString code)
 {
-	std::string strCode = FStringToSTDString(code);
-	lib->SetAuthorizationCode(&strCode);
+	UE_LOG(LogTemp, Warning, TEXT("SetAuthorizationStatePassword - code: %s"), *code);
+	lib->SetAuthorizationCode(ConvertCharParam(code));
 }
 
 void UTelegrammConnector::SetAuthorizationStateRegistration(FString first_name, FString last_name)
 {
-	std::string strFirst_name = FStringToSTDString(first_name);
-	std::string strLast_name = FStringToSTDString(last_name);
-	lib->SetAuthorizationStateRegistration(&strFirst_name, &strLast_name);
+	UE_LOG(LogTemp, Warning, TEXT("SetAuthorizationStateRegistration - first_name: %s last_name: %s"), *first_name, *last_name);
+	lib->SetAuthorizationStateRegistration(ConvertCharParam(first_name), ConvertCharParam(last_name));
 }
 
 void UTelegrammConnector::SetAuthorizationStatePassword(FString password)
 {
-	std::string strPassword = FStringToSTDString(password);
-	lib->SetAuthorizationStatePassword(&strPassword);
+	UE_LOG(LogTemp, Warning, TEXT("SetAuthorizationStatePassword - password: %s"), *password);
+	lib->SetAuthorizationStatePassword(ConvertCharParam(password));
 }
 
 void UTelegrammConnector::SetAuthorizationStatePhoneNumber(FString phone_number)
 {
 	UE_LOG(LogTemp, Warning, TEXT("SetAuthorizationStatePhoneNumber - phone_number: %s"), *phone_number);
-	std::string strPhone_number = FStringToSTDString(phone_number);
-	lib->SetAuthorizationStatePhoneNumber(&strPhone_number);
+	lib->SetAuthorizationStatePhoneNumber(ConvertCharParam(phone_number));
 }
 
 void UTelegrammConnector::SetAuthorizationStateEncryptionKey(FString key)
 {
 	UE_LOG(LogTemp, Warning, TEXT("SetAuthorizationStateEncryptionKey - Key: %s"), *key);
-	std::string strKey = FStringToSTDString(key);
-	lib->SetAuthorizationStateEncryptionKey(&strKey);
+	lib->SetAuthorizationStateEncryptionKey(ConvertCharParam(key));
 }
 
 void UTelegrammConnector::SetAuthorizationStateDestroy()
@@ -183,4 +231,50 @@ void UTelegrammConnector::SetAuthorizationStateDestroy()
 void UTelegrammConnector::SetAuthorizationStateTdlibParameters()
 {
 	lib->SetAuthorizationStateTdlibParameters();
+}
+
+char* UTelegrammConnector::ConvertCharParam(FString inString)
+{
+	std::string strParam = FStringToSTDString(inString);
+
+	char* charParam = new char[strParam.size() + 1];
+	std::copy(strParam.begin(), strParam.end(), charParam);
+	charParam[strParam.size()] = '\0';
+
+	return charParam;
+}
+
+void UTelegrammConnector::ChatUpdated(FChatInfo chatInfo)
+{
+	FTelegrammChatInfo NewData(chatInfo);
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnChatUpdated.Broadcast(NewData);
+	});
+}
+
+void UTelegrammConnector::UserUpdated(FUserInfo UserInfo)
+{
+	FTelegrammUserInfo NewData(UserInfo);
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnUserUpdated.Broadcast(NewData);
+	});
+}
+
+void UTelegrammConnector::MessageUpdated(FMessage message)
+{
+	FTelegrammMessageInfo NewData(message);
+	UE_LOG(LogTemp, Warning, TEXT("MessageUpdated - Sender:%i Text: %s"), NewData.SenderUserId, *NewData.TextContent);
+	//OnMessageUpdated.Broadcast(NewData);
+	AsyncTask(ENamedThreads::GameThread, [=]()
+	{
+		OnMessageUpdated.Broadcast(NewData);
+	});
+}
+
+//void UTelegrammConnector::GetChatHistory(std::int64_t chatId, std::int64_t fromMessageId, std::int32_t offset, std::int32_t limit, bool onlyLocal)
+void UTelegrammConnector::GetChatHistory(int64 chatId, int64 fromMessageId, int64 offset, int64 limit, bool onlyLocal)
+{
+	lib->GetChatHistory(chatId, fromMessageId, offset, limit, onlyLocal);
 }
