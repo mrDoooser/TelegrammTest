@@ -1,7 +1,8 @@
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Development\TelegrammAPI\Definitions.TelegrammAPI.h
-E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammAPIWindows.gen.cpp
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammAPI.init.gen.cpp
 E:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 E:\Unreal\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammAPIWindows.gen.cpp
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI/Public/TelegrammAPIWindows.h
 E:\Unreal\UE_4.22\Engine\Source\Runtime\Engine\Public\EngineMinimal.h
 E:\Unreal\UE_4.22\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
@@ -253,8 +254,9 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.1
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\map
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE\xtree
 e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\intermediate\build\win64\ue4editor\inc\telegrammapi\TelegrammAPIWindows.generated.h
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammConnector.gen.cpp
+E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI/Public/TelegrammConnector.h
+e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\intermediate\build\win64\ue4editor\inc\telegrammapi\TelegrammConnector.generated.h
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Intermediate\Build\Win64\UE4Editor\Inc\TelegrammAPI\TelegrammManager.gen.cpp
 E:\WORK_PRJ\TDTest\TelegrammTest\Plugins\TelegrammAPI\Source\TelegrammAPI/Public/TelegrammManager.h
-e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\source\telegrammapi\public\TelegrammConnector.h
-e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\intermediate\build\win64\ue4editor\inc\telegrammapi\TelegrammConnector.generated.h
 e:\work_prj\tdtest\telegrammtest\plugins\telegrammapi\intermediate\build\win64\ue4editor\inc\telegrammapi\TelegrammManager.generated.h

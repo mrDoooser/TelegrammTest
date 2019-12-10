@@ -8,10 +8,10 @@
 			"TelegrammConnector.cpp.obj"
 		],
 		"Module.TelegrammAPI.gen.cpp.obj": [
-			"TelegrammAPIWindows.gen.cpp.obj",
-			"TelegrammManager.gen.cpp.obj",
 			"TelegrammAPI.init.gen.cpp.obj",
-			"TelegrammConnector.gen.cpp.obj"
+			"TelegrammAPIWindows.gen.cpp.obj",
+			"TelegrammConnector.gen.cpp.obj",
+			"TelegrammManager.gen.cpp.obj"
 		]
 	}
 }

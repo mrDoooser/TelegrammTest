@@ -12,7 +12,7 @@ void UTelegrammConnector::InitTD()
 
 	if (lib != nullptr)
 	{
-		lib->~UETdApiLibrary();
+		delete lib;
 	}
 
 	lib = new UETdApiLibrary();
