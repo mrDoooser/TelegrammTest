@@ -79,6 +79,7 @@ extern "C"
 	public:
 		// Commands
 		__declspec(dllexport) void GetChatHistory(std::int64_t chatId, std::int64_t fromMessageId, std::int32_t offset, std::int32_t limit, bool onlyLocal);
+		__declspec(dllexport) void SendTextMessage(std::int64_t chatId, std::int64_t replyToMessageID, bool disableNotifications, bool fromBackground, char* message);
 
 		// Messages
 		void MessageUpdated(FMessage message);

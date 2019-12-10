@@ -273,8 +273,12 @@ void UTelegrammConnector::MessageUpdated(FMessage message)
 	});
 }
 
-//void UTelegrammConnector::GetChatHistory(std::int64_t chatId, std::int64_t fromMessageId, std::int32_t offset, std::int32_t limit, bool onlyLocal)
 void UTelegrammConnector::GetChatHistory(int64 chatId, int64 fromMessageId, int64 offset, int64 limit, bool onlyLocal)
 {
 	lib->GetChatHistory(chatId, fromMessageId, offset, limit, onlyLocal);
+}
+
+void UTelegrammConnector::SendTextMessage(int64 chatId, FString message, int64 replyToMessageID, bool disableNotifications, bool fromBackground)
+{
+	lib->SendTextMessage(chatId, replyToMessageID, disableNotifications, fromBackground, ConvertCharParam(message));
 }

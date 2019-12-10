@@ -155,6 +155,19 @@ static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelega
 
 #define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execSendTextMessage) \
+	{ \
+		P_GET_PROPERTY(UInt64Property,Z_Param_chatId); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_message); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_replyToMessageID); \
+		P_GET_UBOOL(Z_Param_disableNotifications); \
+		P_GET_UBOOL(Z_Param_fromBackground); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SendTextMessage(Z_Param_chatId,Z_Param_message,Z_Param_replyToMessageID,Z_Param_disableNotifications,Z_Param_fromBackground); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execGetChatHistory) \
 	{ \
 		P_GET_PROPERTY(UInt64Property,Z_Param_chatId); \
@@ -280,6 +293,19 @@ static inline void FOnCallbackMaked_DelegateWrapper(const FMulticastScriptDelega
 
 
 #define TelegrammTest_Plugins_TelegrammAPI_Source_TelegrammAPI_Public_TelegrammConnector_h_230_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSendTextMessage) \
+	{ \
+		P_GET_PROPERTY(UInt64Property,Z_Param_chatId); \
+		P_GET_PROPERTY(UStrProperty,Z_Param_message); \
+		P_GET_PROPERTY(UInt64Property,Z_Param_replyToMessageID); \
+		P_GET_UBOOL(Z_Param_disableNotifications); \
+		P_GET_UBOOL(Z_Param_fromBackground); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->SendTextMessage(Z_Param_chatId,Z_Param_message,Z_Param_replyToMessageID,Z_Param_disableNotifications,Z_Param_fromBackground); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execGetChatHistory) \
 	{ \

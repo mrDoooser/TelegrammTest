@@ -293,6 +293,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void GetChatHistory(int64 chatId, int64 fromMessageId, int64 offset, int64 limit, bool onlyLocal);
 
+	UFUNCTION(BlueprintCallable)
+	void SendTextMessage(int64 chatId, FString message, int64 replyToMessageID, bool disableNotifications, bool fromBackground);
+
+
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool isListening;

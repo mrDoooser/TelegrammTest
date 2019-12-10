@@ -51,8 +51,8 @@ void EmptyLinkFunctionForGeneratedCodeTelegrammAPI_init() {}
 				SingletonFuncArray,
 				ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xC96C41AF,
-				0x18EBCC67,
+				0x44E015F4,
+				0xE3DCA136,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

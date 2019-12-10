@@ -41,6 +41,7 @@ void EmptyLinkFunctionForGeneratedCodeTelegrammConnector() {}
 	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_Initialized();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_InitTD();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_Loop();
+	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_SendTextMessage();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_SetAuthorizationCode();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_SetAuthorizationStateDestroy();
 	TELEGRAMMAPI_API UFunction* Z_Construct_UFunction_UTelegrammConnector_SetAuthorizationStateEncryptionKey();
@@ -1283,6 +1284,7 @@ static struct FScriptStruct_TelegrammAPI_StaticRegisterNativesFTelegrammChatInfo
 			{ "Initialized", &UTelegrammConnector::execInitialized },
 			{ "InitTD", &UTelegrammConnector::execInitTD },
 			{ "Loop", &UTelegrammConnector::execLoop },
+			{ "SendTextMessage", &UTelegrammConnector::execSendTextMessage },
 			{ "SetAuthorizationCode", &UTelegrammConnector::execSetAuthorizationCode },
 			{ "SetAuthorizationStateDestroy", &UTelegrammConnector::execSetAuthorizationStateDestroy },
 			{ "SetAuthorizationStateEncryptionKey", &UTelegrammConnector::execSetAuthorizationStateEncryptionKey },
@@ -1470,6 +1472,64 @@ static struct FScriptStruct_TelegrammAPI_StaticRegisterNativesFTelegrammChatInfo
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UTelegrammConnector_Loop_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics
+	{
+		struct TelegrammConnector_eventSendTextMessage_Parms
+		{
+			int64 chatId;
+			FString message;
+			int64 replyToMessageID;
+			bool disableNotifications;
+			bool fromBackground;
+		};
+		static void NewProp_fromBackground_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_fromBackground;
+		static void NewProp_disableNotifications_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_disableNotifications;
+		static const UE4CodeGen_Private::FInt64PropertyParams NewProp_replyToMessageID;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_message;
+		static const UE4CodeGen_Private::FInt64PropertyParams NewProp_chatId;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_fromBackground_SetBit(void* Obj)
+	{
+		((TelegrammConnector_eventSendTextMessage_Parms*)Obj)->fromBackground = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_fromBackground = { "fromBackground", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TelegrammConnector_eventSendTextMessage_Parms), &Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_fromBackground_SetBit, METADATA_PARAMS(nullptr, 0) };
+	void Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_disableNotifications_SetBit(void* Obj)
+	{
+		((TelegrammConnector_eventSendTextMessage_Parms*)Obj)->disableNotifications = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_disableNotifications = { "disableNotifications", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(TelegrammConnector_eventSendTextMessage_Parms), &Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_disableNotifications_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_replyToMessageID = { "replyToMessageID", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TelegrammConnector_eventSendTextMessage_Parms, replyToMessageID), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_message = { "message", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TelegrammConnector_eventSendTextMessage_Parms, message), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FInt64PropertyParams Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_chatId = { "chatId", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int64, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(TelegrammConnector_eventSendTextMessage_Parms, chatId), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_fromBackground,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_disableNotifications,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_replyToMessageID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_message,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::NewProp_chatId,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/TelegrammConnector.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UTelegrammConnector, nullptr, "SendTextMessage", sizeof(TelegrammConnector_eventSendTextMessage_Parms), Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UTelegrammConnector_SendTextMessage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UTelegrammConnector_SendTextMessage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -1791,6 +1851,7 @@ static struct FScriptStruct_TelegrammAPI_StaticRegisterNativesFTelegrammChatInfo
 		{ &Z_Construct_UFunction_UTelegrammConnector_Initialized, "Initialized" }, // 1700822131
 		{ &Z_Construct_UFunction_UTelegrammConnector_InitTD, "InitTD" }, // 719290828
 		{ &Z_Construct_UFunction_UTelegrammConnector_Loop, "Loop" }, // 1646748631
+		{ &Z_Construct_UFunction_UTelegrammConnector_SendTextMessage, "SendTextMessage" }, // 448435475
 		{ &Z_Construct_UFunction_UTelegrammConnector_SetAuthorizationCode, "SetAuthorizationCode" }, // 2562696240
 		{ &Z_Construct_UFunction_UTelegrammConnector_SetAuthorizationStateDestroy, "SetAuthorizationStateDestroy" }, // 2048941844
 		{ &Z_Construct_UFunction_UTelegrammConnector_SetAuthorizationStateEncryptionKey, "SetAuthorizationStateEncryptionKey" }, // 694272199
@@ -1946,7 +2007,7 @@ static struct FScriptStruct_TelegrammAPI_StaticRegisterNativesFTelegrammChatInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTelegrammConnector, 2706253766);
+	IMPLEMENT_CLASS(UTelegrammConnector, 671155084);
 	template<> TELEGRAMMAPI_API UClass* StaticClass<UTelegrammConnector>()
 	{
 		return UTelegrammConnector::StaticClass();
